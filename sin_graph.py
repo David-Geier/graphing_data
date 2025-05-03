@@ -12,7 +12,7 @@ Comments: I made this more of a struggle and time commitment than it probably ne
         > Add some preset themes in the settings which could potentially be
           universal for future graphs
         
-        Line 76 was inspired by an Edabit coding challenge solution that I was super impressed by
+        Line 77 was inspired by an Edabit coding challenge solution that I was super impressed by
         > Condensing a calculation, conditional, and loop all into one line of code
 """
 
@@ -73,7 +73,8 @@ class SinGraph:
         graph.set_xticks(tick_positions)
         # This is a different application for someone else's elegant solution to a coding challenge I found a while back
         graph.set_xticklabels(
-            [f'{round(x/np.pi, 1)}π' if x != 0 else '0' for x in tick_positions] # Said elegant solution (Always cool to see code condensed to a single line)
+            # Iterate through x values in list of tick positions. Print 'x'pi, unless 'x' is 0 -> pi symbol is left off
+            [f'{round(x/np.pi, 1)}π' if x != 0 else '0' for x in tick_positions]
         )
         graph.grid(True, which='both', axis='x', linestyle='--', alpha=0.5)
 
