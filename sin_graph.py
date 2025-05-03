@@ -1,4 +1,20 @@
+"""
+Author: David Geier
 
+Date: 05/02/2025
+
+Comments: I made this more of a struggle and time commitment than it probably needed to be.
+        
+        Something I'd 'fix' and something I'd add if I continued working on this project:
+        > Separate the calculation for ticks and grid marks. I don't 
+          like having the value of pi labeled for each quarter cycle of sin,
+          and I'd prefer to have the values laveled for each whole value of pi only
+        > Add some preset themes in the settings which could potentially be
+          universal for future graphs
+        
+        Line 76 was inspired by an Edabit coding challenge solution that I was super impressed by
+        > Condensing a calculation, conditional, and loop all into one line of code
+"""
 
 
 import matplotlib.pyplot as plt
